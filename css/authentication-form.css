@@ -24,20 +24,86 @@ p {
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
+#sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+}
+
 form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   border: 1px solid #a9a9a9;
   padding: 20px;
 }
 
-.subtext {
+.form-header {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+ .form-submit-control { 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+ }
+
+ .form-checkbox-control { margin: 10px 0;}
+
+ .subtext {
   color: #a9a9a9;
   font-weight: unset;
 }
+
+select#state { 
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form-radio-control { margin: 5px 0;}
+
 
 #sign-in,
 #sign-up {
   width: 100%;
 }
+
+#sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-input-control {
+  flex: 1;
+}
+
+.form-input-control select {
+  width: 100%; 
+}
+
 
 a {
   color: #335eea;
@@ -52,6 +118,7 @@ input {
   width: 100%;
   height: 30px;
   padding: 5px;
+  border-radius: 5px;
 }
 
 input[type="checkbox"],
@@ -80,6 +147,4 @@ input[type="submit"]:hover {
   background: #294bbb;
 }
 
-.form select {
-  height: 30px;
-}
+
